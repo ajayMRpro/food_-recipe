@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image:url(https://th.bing.com/th/id/OIP.MMtOF9wWJhowGcUwb8r5YgHaEK?rs=1&pid=ImgDetMain) ;
+  
+  height: 100vh;/*viewpint height---  if screen is 800px 
+  1vh = 8px*/ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #4d4141d5;
+}
+.container {
+  height: 90%;
+  width: 80%;
+  padding: 10px 5px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgb(87, 191, 214);
+}
+.nav {
+  margin: 0;
+  box-sizing: border-box;
+  /* height: 40px; */
+  width: 100%;
+  text-align: center;
+}
+.nav #searchItem {
+  height: 30px;
+  max-width: 40%;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.nav select,
+.nav option {
+  height: 30px;
+  max-width: 200px;
+}
+.nav button {
+  border-radius: 10px;
+  border: none;
+  height: 30px;
+  width: 10%;
+  cursor: pointer;
+}
+.favitem ul li img {
+  width: 4.3rem;
+  height: 4.3rem;
+  border-radius: 50%;
+}
+.favitem {
+  margin-top: 10px;
+  text-align: center;
+}
+.favitem #ul {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  /* border: 2px solid red; */
+  overflow: hidden;
+  list-style: none;
+}
+.favitem ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5px 10px;
+}
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* items will automatically move to the next
+   line if there's no enough space.*/
+  overflow-y: scroll;
+/*overflow-y -> content is handled vertically (up and down) if it overflows the container.
+scroll -. a vertical scrollbar will always appear*/
+  position: relative;
+}
+.main .desc {
+  font-size: 20px;
+  width: 75%;
+}
+.main .desc::first-letter {
+  font-size: 30px;
+  color: #ef1515;
+  font-weight: bold;
+}
+.items {
+  height: 300px;
+  width: 300px;
+  border: 2px solid rgba(22, 21, 21, 0.89);
+  border-radius: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+  /* padding: 10px; */
+  overflow: hidden;
+  position: relative;
+}
+.img {
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.img:hover {
+  scale: 1.2;
+}
+.items .p {
+  position: absolute;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  bottom: 0px;
+  left: 0px;
+  color: white;
+  text-transform: capitalize;
+  width: 100%;
+  background-color: #00000085;
+  backdrop-filter: blur(10px);
+}
+

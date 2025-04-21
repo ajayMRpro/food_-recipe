@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal is ready</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="nav">
+            <select name="country" id="c">
+                <option hidden>Country</option>
+                <option value="indian">Indian</option>
+                <option value="Greek ">Greek </option>
+                <option value="French ">French </option>
+                <option value="italian">italian</option>
+                <option value="Mexican">Mexican</option>
+                <option value="japanese">Japanese</option>
+                <option value="chinese">Chinese</option>
+            </select>
+            <select name="food" id="food">
+                <option hidden>Chooes one</option>
+            </select>
+            <input type="text" placeholder="Search Your fav Item" id="searchItem">
+            <button id="search">Search</button>
+        </div>
+        <div class="favitem">
+            <h2>Today Special</h2>
+            <ul id="ul">
+               
+            </ul>
+        </div>
+        <div class="main">
+        </div>
+        <script src="scripts.js"></script>
+    </div>
+</body>
+
+</html>
